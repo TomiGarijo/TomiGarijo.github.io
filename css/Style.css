@@ -1,0 +1,915 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Footer */
+header {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(24, 98, 208, 0.9);
+    opacity: 0.9;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.color{
+   color: white; 
+}
+
+.conte1 {
+    float: left;
+    margin: 20px 10px 20px 25px;
+    user-select: none;
+}
+
+.logo1 {
+    height: 95px;
+    width: 125px;
+}
+
+.conte2 {
+    width: 700px;
+    float: left;
+    margin: 88px 0px 0px 70px;
+}
+
+.conte2 > ul {
+    list-style: none;
+    margin: 0;
+}
+
+.conte2 > ul > li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ 
+.conte3 {
+    float: right;
+    margin: 85px 70px 0px 0px;
+}
+
+.enlace {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.btn{
+    background-color: rgba(20, 88, 189, 1);
+    padding: 10px 15px;
+    border-radius: 20px;
+    /*box-shadow: 0px 2px 5px 0 black;*/
+}
+
+.btn2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.conte2 ul > li > a {
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.conte2 ul > li > a:hover {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition-duration: 0.3s;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1em;
+    overflow: hidden;
+    background-color: rgba(24, 98, 208, 0.9);
+    opacity: 0.9;
+    user-select: none;
+}
+
+.logo2 {
+    width: 70px;
+    height: 55px;
+}
+
+.logot2 {
+    font-size: 20px;
+}
+
+.logofooter {
+    padding: 0px 10px 10px 20px;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    text-align: right;
+}
+
+.conteicons {
+    margin: 10px 20px 20px 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+}
+/*Fin Header Footer */
+
+/* comienzo página Inicio */
+.conte4{
+    width: 100%;
+    height: 600px;
+    background-image: url("../image/index/3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    box-shadow: 0 1px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.conte4 > h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 60px;
+    user-select: none;
+}
+
+div.conte4 > h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    user-select: none;
+}
+
+div.busqueda > form {
+    width: 675px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+div.busqueda > form > input {
+    width: 500px;
+    height: 55px; 
+    border-radius: 20px;
+    background-color: rgba(24, 98, 208, 0.6);
+    border: 0 solid white;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+div.busqueda > form > div {
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+div.busqueda > form > div > .searchbtn {
+    width: 135px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(24, 98, 208, 0.8);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+div.busqueda > form > input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.busqueda > form > div > .searchbtn:hover {
+    transition-duration: 0.3s;
+    color: black;
+    background-color: white;
+}
+
+.conte5 {
+    width: 100%;
+    height: 450px;
+    background-color: rgba(24, 98, 208, 0.8);
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.conte5 > h1 {
+    margin-bottom: 40px;
+    margin-top: 20px;
+} 
+
+.img {
+    width: 650px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+}
+
+div.conte5 > div {
+    width: 650px;
+    height: 300px;
+    position: relative; 
+}
+
+div.conte5 > div > div {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.conte5 > div > div.h3 {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.conte5 > div > div > h3 {
+    color: white;
+    user-select: none;
+}
+
+div.conte5 > div > div > .searchbtn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(24, 98, 208, 0.8);
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+div.conte5 > div > div > .searchbtn:hover {
+    color: black;
+    background-color: white;
+    transition-duration: 0.3s;
+}
+/* fin página Inicio */
+
+/* comienzo página Hoteles */
+.contehotel {
+    background-color: rgba(24, 98, 208, 0.7);
+    width: 100%;
+    height: auto;
+    padding: 50px 300px 50px 300px;
+
+}
+
+ul.lista {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+ul.lista > li {
+    list-style-type: none;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 35px;
+}
+
+ul.lista > li > div {
+    padding-top: 16px;
+    width: 270px;
+    height: 350px;
+    background-color:rgba(20, 88, 189, 1);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: -1px 6px 20px black;
+}
+
+ul.lista > li > div > img {
+    width: 220px;
+    height: 175px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 1px 5px black;  
+}
+
+.hotel > h1 {
+    margin-bottom: 15px;
+}
+
+.hotel > .btn2:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition-duration: 0.3s;
+} 
+
+.hotel:hover {
+    background-color:rgba(20, 88, 189, 0.9);
+    transition-duration: 0.1s;
+    transform: scale(1.06,1.06);
+}   
+
+#texto {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+/* fin página Hoteles */
+
+/* comienzo página Vuelos */
+.contevuelos {
+    background-color: rgba(24, 98, 208, 0.7);
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 0px 0px;
+}
+
+.exc {
+    display: block;
+    padding: 0;
+    margin: 30px auto 50px;
+    background-color: rgba(20, 88, 189, 1);
+    width: 1500px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 1px 15px black;
+}
+
+.conteinf {
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 700px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 100px 0px 0px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+div.contevuelos > h1 {
+    color:  white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 0 0 20px 0;
+}
+
+div.exc > img {
+    width: 600px;
+    height: 496px;
+    border-radius: 20px 0 0 20px;
+}
+
+div.exc > div {
+    float: right;
+    width: 800px;
+    height: 496px;
+}
+
+div.exc > div > p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 700px;
+    padding-bottom: 100px;
+}
+
+div.exc > div > a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+div.exc > div > h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    width: 700px;
+    padding-top: 150px;
+}
+
+ul.lista2 {
+    padding: 20px;
+    text-align: center;
+}
+
+ul.lista2 > li {
+    display: inline-block;
+}
+
+ul.lista2 > li > div {
+    padding-top: 0;
+    width: 350px;
+    height: 450px;
+    background-color:rgba(20, 88, 189, 1);
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 40px;
+    box-shadow: 0 1px 7px black;
+}
+
+ul.lista2 > li > div:hover {
+    background-color:rgba(20, 88, 189, 0.9);
+    transition-duration: 0.1s;
+    transform: scale(1.06,1.06);
+}
+
+ul.lista2 > li > div > img {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 25px; 
+}
+
+ul.lista2 > li > div > h1 {
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+div.conteinf > h1 {
+    color:  white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 35px 0 20px 0;
+}
+
+div.contevuelos > div > div > a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition-duration: 0.3s;
+}
+
+div.contevuelos > div > ul > li > div > a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition-duration: 0.3s;
+}
+/* fin página Vuelos */
+
+/* comienzo página Excursiones */
+div.contexcursiones {
+    background-color: rgba(24, 98, 208, 0.7);
+    width: 100%;
+    height: auto;
+    padding: 30px 0 0 0;
+}
+
+div.contexcursiones > div.video {
+    width: 800px;
+    height: 400x;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px black;
+}
+
+div.contexcursiones > h1 {
+    text-align: center;
+}
+
+div.contexcursiones > div > h2 {
+    padding: 175px;
+    text-align: center;
+}
+
+div.contexcursiones > div.conteinf {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 2100px;
+    margin-top: 150px;
+    padding: 100px 0;
+} 
+
+div.contexcursiones > div.conteinf > h1 {
+    text-align: center;
+    margin: 0;
+}
+
+div.contexcursiones > div.conteinf > div {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1500px;
+    height: 500px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 5px 10px black;
+
+}
+
+div.contexcursiones > div.conteinf > div > img {
+    height: 496px;
+    width: 700px;
+    border-radius: 20px 0 0 20px;
+}
+
+div.contexcursiones > div.conteinf > div > div {
+    width: 650px;
+    float: right;
+    padding: 50px 0;
+}
+
+div.contexcursiones > div.conteinf > div > div > p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    width: 500px;
+}
+/* fin página Excursiones */
+
+/* comienzo página Contacto */
+div.imgcont {
+    background-image: url("../image/Contacto/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 757px;
+    box-shadow: 0 1px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.imgcont > div {
+    width: 1000px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.imgcont > div > h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+div.imgcont > div > h2 {
+    font-size: 30px;
+    width: 1000px;
+    text-align: center;
+}
+
+div.before-contacto {
+    background-color: rgba(24, 98, 208, 0.6);
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+div.contacto {
+    background-color: rgba(24, 98, 208, 0.6);
+    width: 1000px;
+    height: auto;
+    margin: 0px auto 0px;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 0 1px 5px black;
+}
+
+div.contacto > form > fieldset {
+    width: 1000px;
+    height: auto;
+    border-radius: 20px;
+    border: 0px;
+}
+
+div.contacto > form > fieldset > .input {
+    margin-top: 35px;
+    margin-left: 95px;
+    font-size: 30px;    
+    width: 800px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(24, 98, 208, 0.5);
+    border: 1px solid white;
+    padding-left: 15px;
+}
+
+div.contacto > form > fieldset > .input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.contacto > form > fieldset > div {
+    width: 400px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 95px;
+    display: flex;
+    align-items: center;
+}
+
+div.contacto > form > fieldset > div > label {
+    font-size: 17px;
+    color: white;
+    padding: 0px 0px 0px 10px;
+}
+
+.checkbox {
+    appearance: none;
+    /*margin-top: 20px;
+    margin-left: 100px;*/
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.checkbox:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.contacto > form > fieldset > textarea {
+    resize: vertical;
+    width: 800px;
+    height: 140px;
+    margin: 25px 0 0 95px;
+    font-size: 30px;    
+    border-radius: 20px;
+    background-color: rgba(24, 98, 208, 0.5);
+    border: 1px solid white;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+div.contacto > form > fieldset > textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.diva {
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+div.contacto > form > fieldset > div > a {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+/* fin página Contacto */
+
+/*Responsive*/
+
+@media screen and (max-width:900px) { 
+    section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* INICIO PAGINA INDEX */
+
+    .conte5 {
+        display: flex;
+        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    div.conte5 > div {
+        width: 70%;
+        height: 50%;
+    }
+    
+    div.conte5 > div > img {
+        width: 575px;
+        height: 225px;
+    }
+
+    div.conte5 > div > div.h3 {
+        padding-bottom: 30px;
+    }
+
+    div.conte5 > div > div > a {
+        margin-bottom: 5px;
+    }
+
+    .conte4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    div.busqueda {
+        margin-bottom: 20px;
+    }
+
+    div.busqueda > form  {
+        width: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    div.busqueda > form > div > .searchbtn {
+        margin-top: 5px;
+    }
+    
+    div.busqueda > form > input {
+        width: 99%;
+    }
+
+    div.conte4 > h1 {
+        font-size: 40px;
+    }
+
+    div.conte4 > h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* FIN PAGINA INDEX */
+
+    /* INICIO PAGINA HOSPEDAJE */
+
+    div.contehotel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    div.contehotel > h1 {
+        margin-top: 120px;
+    }
+
+    ul.lista {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    div.hotel {
+        width: auto;
+        height: auto;
+        
+    }
+}
+
+/* FIN PAGINA HOSPEDAJE */
+
+/* NAV BAR - HEADER */
+
+@media (min-width: 1167px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width:1166px) {
+    .conte1 {
+        display: none;
+    }
+    
+    .conte2 {
+        display: none;
+    }
+
+    .conte3 {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(66, 124, 212);
+        opacity: 1 !important;
+        z-index: 2;
+        box-shadow: 0 1px 5px black;
+    }
+
+    .main-menu {
+        height: 100%;
+        width: 100%;
+    }
+
+    .toggle-menu__a {
+        position: absolute;
+        padding: 15px 30px;
+    }
+
+    .toggle-menu__img {
+        height: 70px;
+        width: 100px;
+    }
+    
+    .main-menu__ul {
+        position: fixed;
+        background-color: rgb(66, 124, 212);
+        width: 300px;
+        height: 100%;
+        /*transform: translate(-150%);*/
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        top: 95px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all .7s;
+    }
+
+    .bars {
+        width: 35px;
+    }
+
+    .main-menu__item {
+        display: block;
+        padding: 25px 0;
+        
+    }
+
+    #margin {
+        margin-top: 50px;
+    }
+
+    .main-menu__link {
+        color: white;
+        font-size: 20px;
+        padding: 20px 30px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
+    .main-menu__link:hover {
+        color: black;
+    }
+
+    .toggle-menu__label {
+        font-size: 30px;
+        color: white;
+        float: right;
+        margin-top: 35px;
+        margin-right: 40px;
+        margin-bottom: 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    #toggle-menu-checkbox:checked ~ .main-menu__ul {
+        transform:  translateY(0);
+        transform: scaleX(1);
+    }
+
+    .toggle-menu__checkbox {
+        display: none;
+    }
+}
