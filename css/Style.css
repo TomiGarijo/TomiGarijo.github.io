@@ -1,3 +1,5 @@
+/* INICIO GENERAL PAGINA */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +7,18 @@
     font-family: 'Comfortaa', cursive;
     list-style: none;
     text-decoration: none;
+    user-select: none;
+}
+
+body {
+    background-color: white;
 }
 
 img {
     max-width: 100%;
 }
+
+/* FIN GENERAL PAGINA */
 
 /* Header Footer */
 header {
@@ -18,7 +27,6 @@ header {
     background-color: rgba(24, 98, 208, 0.9);
     opacity: 0.9;
     box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.5);
-    user-select: none;
 }
 
 .color{
@@ -28,7 +36,6 @@ header {
 .conte1 {
     float: left;
     margin: 20px 10px 20px 25px;
-    user-select: none;
 }
 
 .logo1 {
@@ -68,7 +75,6 @@ header {
     background-color: rgba(20, 88, 189, 1);
     padding: 10px 15px;
     border-radius: 20px;
-    /*box-shadow: 0px 2px 5px 0 black;*/
 }
 
 .btn2 {
@@ -711,7 +717,7 @@ div.contacto > form > fieldset > div > a {
 
     /* INICIO PAGINA INDEX */
 
-    .conte5 {
+    div.conte5 {
         display: flex;
         justify-content: center;
         justify-content: flex-start;
@@ -735,12 +741,21 @@ div.contacto > form > fieldset > div > a {
         margin-bottom: 5px;
     }
 
-    .conte4 {
+    div.conte4 {
         width: 100%;
         display: flex;
         flex-direction: column; 
         align-items: center;
         justify-content: flex-end;
+    }
+
+    div.conte4 > h1 {
+        font-size: 40px;
+    }
+
+    div.conte4 > h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
     }
 
     div.busqueda {
@@ -754,23 +769,14 @@ div.contacto > form > fieldset > div > a {
         align-items: center;
     }
 
-    div.busqueda > form > div > .searchbtn {
-        margin-top: 5px;
-    }
-    
     div.busqueda > form > input {
         width: 99%;
     }
 
-    div.conte4 > h1 {
-        font-size: 40px;
+    div.busqueda > form > div > .searchbtn {
+        margin-top: 5px;
     }
-
-    div.conte4 > h2 {
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-
+    
     /* FIN PAGINA INDEX */
 
     /* INICIO PAGINA HOSPEDAJE */
@@ -797,7 +803,6 @@ div.contacto > form > fieldset > div > a {
     div.hotel {
         width: auto;
         height: auto;
-        
     }
 }
 
@@ -805,38 +810,30 @@ div.contacto > form > fieldset > div > a {
 
 /* NAV BAR - HEADER */
 
-@media (min-width: 1167px) {
+@media (min-width: 1201px) {
     nav {
         display: none;
     }
 }
 
-@media (max-width:1166px) {
-    .conte1 {
-        display: none;
-    }
-    
-    .conte2 {
-        display: none;
-    }
-
-    .conte3 {
+@media (max-width:1200px) {
+    .conte1, .conte2, .conte3, .toggle-menu__checkbox {
         display: none;
     }
 
     header {
-        position: fixed;
-        width: 100%;
-        height: 100px;
         background-color: rgb(66, 124, 212);
         opacity: 1 !important;
-        z-index: 2;
         box-shadow: 0 1px 5px black;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        z-index: 2;
     }
 
     .main-menu {
-        height: 100%;
         width: 100%;
+        height: 100%;
     }
 
     .toggle-menu__a {
@@ -848,23 +845,21 @@ div.contacto > form > fieldset > div > a {
         height: 70px;
         width: 100px;
     }
-    
+
     .main-menu__ul {
-        position: fixed;
         background-color: rgb(66, 124, 212);
-        width: 300px;
-        height: 100%;
-        /*transform: translate(-150%);*/
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: left;
+        border-bottom: 1px solid white;
+        width: 100%;
+        height: 500px;
+        position: fixed;
         top: 95px;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: all .5s; 
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        transition: all .7s;
     }
 
     .bars {
@@ -872,9 +867,8 @@ div.contacto > form > fieldset > div > a {
     }
 
     .main-menu__item {
-        display: block;
-        padding: 25px 0;
-        
+        padding: 25px 0px;
+        width: 240px;
     }
 
     #margin {
@@ -884,32 +878,27 @@ div.contacto > form > fieldset > div > a {
     .main-menu__link {
         color: white;
         font-size: 20px;
-        padding: 20px 30px;
-        border-radius: 3px;
+        padding: 20px 0px;
         text-transform: uppercase;
+    }
+
+    .toggle-menu__label {
+        float: right;
+        margin: 35px 40px 0px 0px;
+        cursor: pointer;
+    }
+
+    #toggle-menu-checkbox:checked ~ .main-menu__ul {
+        transform: scaleX(1);
     }
 
     .main-menu__link:hover {
         color: black;
     }
 
-    .toggle-menu__label {
-        font-size: 30px;
-        color: white;
-        float: right;
-        margin-top: 35px;
-        margin-right: 40px;
-        margin-bottom: 0;
-        cursor: pointer;
-        display: block;
-    }
-
-    #toggle-menu-checkbox:checked ~ .main-menu__ul {
-        transform:  translateY(0);
-        transform: scaleX(1);
-    }
-
-    .toggle-menu__checkbox {
-        display: none;
+    .main-menu__item:hover {
+        border-bottom: 2px solid black;
     }
 }
+
+/* FIN NAV BAR - HEADER */
